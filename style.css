@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: 20px auto;
+  align-items: center;
+  justify-content: space-around;
+}
+.side {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  align-items: center;
+  justify-content: space-between;
+  height: 250px;
+}
+.side img {
+  width: 50%;
+  margin: 10px 5px;
+  padding: 5px;
+  height: 90%;
+}
+.healthContainer {
+  width: 100%;
+  background-color: #ddd;
+}
+.health {
+  text-align: right;
+  padding: 20px 0px;
+  color: white;
+  width: 100%;
+  background-color: green;
+}
