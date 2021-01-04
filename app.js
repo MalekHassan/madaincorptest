@@ -30,7 +30,11 @@ function attackTwo() {
     location.reload();
   }
 }
-setInterval(() => {
+let catAttacks = setInterval(attack, 2000);
+function stopAttack() {
+  clearInterval(catAttacks);
+}
+function attack() {
   let hittingArray = [20, 50];
   let percent = parseInt(
     dogHealth.offsetWidth - hittingArray[Math.floor(Math.random() * 2)]
@@ -42,8 +46,9 @@ setInterval(() => {
   if (dogHealth.offsetWidth === 0) {
     alert('Cat wins');
     location.reload();
+    stopAttack();
   }
-}, 2000);
+}
 
 // events
 
